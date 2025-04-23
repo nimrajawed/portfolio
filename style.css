@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Oxygen", sans-serif;
 }
@@ -8,7 +9,9 @@
     background-color: rgb(147, 147, 241);
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: inline-block;
+    
+  
 
 }
 .orangebox{
@@ -17,13 +20,11 @@
     top: 0;
     left: 0;
     color: white;
-    display: flex;
-    flex-direction: column;
-  padding-top: 150px;
-  gap: 20px;
+  
+    padding-top: 150px;
   padding-left: 50px;
   position: fixed;
-    background-color: rgb(189, 91, 107);}
+    background-color: rgb(190, 21, 50);}
 
 .whitebox{
     height: 100vh;
@@ -32,7 +33,7 @@
     padding-left: 80px;
     padding-top: 180px;
     margin-left: 20%;
-    overflow-y: auto;
+    overflow: auto;
     
 }
 a{
@@ -46,7 +47,7 @@ img{
     border-radius: 50%;
     height: 170px;
     width: 170px;
-    border: 10px solid rgb(214, 122, 138);
+    border: 10px solid rgb(236, 74, 101);
 
 
 }
@@ -55,7 +56,7 @@ h1{
     font-size: 70px;
 }
 span{
-    color: rgb(189, 91, 107);
+    color: rgb(190, 21, 50);
 }
 p{
     color: grey;
@@ -78,100 +79,14 @@ h2{
     padding-top: 230px;
 }
 svg{
-    color: rgb(189, 91, 107);
+    color: rgb(190, 21, 50);
     height: 50px;
     width: 50px;
 }
 a:hover{
-    color: rgb(214, 122, 138);
+    color: rgb(236, 74, 101);
 }
 svg:hover{
-    color:rgb(214, 122, 138) ;
+    color:rgb(236, 74, 101) ;
 }
 
-@media (max-width: 768px) {
-    .main {
-      flex-direction: column;
-    }
-  
-    .orangebox {
-      position: relative;
-      width: 100%;
-      height: auto;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      gap: 10px;
-      text-align: center;
-    }
-  
-    .orangebox img {
-      height: 120px;
-      width: 120px;
-      margin-bottom: 10px;
-    }
-  
-    .whitebox {
-      width: 100%;
-      margin-left: 0;
-      padding: 20px;
-      padding-top: 50px;
-      height: auto;
-    }
-  
-    a {
-      font-size: 16px;
-    }
-  
-    h1 {
-      font-size: 40px;
-    }
-  
-    h2 {
-      font-size: 30px;
-    }
-  
-    svg {
-      height: 30px;
-      width: 30px;
-    }
-  
-    p {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .orangebox {
-      flex-direction: row;
-      padding-left: 0;
-    }
-  
-    .orangebox img {
-      height: 100px;
-      width: 100px;
-    }
-  
-    a {
-      font-size: 14px;
-    }
-  
-    .whitebox {
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 30px;
-    }
-  
-    h2 {
-      font-size: 24px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  }
-  
